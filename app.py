@@ -3,8 +3,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 app = Flask(__name__)
 
-model = AutoModelForSeq2SeqLM.from_pretrained("opus-mt-en-hi")
-tokenizer = AutoTokenizer.from_pretrained("opus-mt-en-hi")
+model = AutoModelForSeq2SeqLM.from_pretrained("Helsinki-NLP/opus-mt-en-hi")
+tokenizer = AutoTokenizer.from_pretrained("Helsinki-NLP/opus-mt-en-hi")
 
 
 def translate_text(text):
